@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AL-HANIF</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-[#0b1120] text-white">
+
+    <!-- NAVBAR -->
+    <nav class="w-full bg-teal-400 text-white py-4 px-6 flex items-center justify-between relative">
+      <img src="https://al-hanifcibarusah.sch.id/logo-home.png" class="w-40 h-auto mr-14" />
+
+      <!-- Hamburger -->
+      <button id="menu-btn" class="md:hidden text-3xl text-white">
+        ☰
+      </button>
+
+      <!-- Menu -->
+      <ul id="menu"
+        class="hidden md:flex gap-6 text-xl text-white font
+        absolute md:static top-full left-0 w-full md:w-auto
+        bg-teal-400 md:bg-transparent
+        flex-col md:flex-row items-center md:items-start
+        py-6 md:py-0">
+
+        <li><a href="index.html" class="text-blue-500 md:text-white hover:text-blue-400 duration-200">Home</a></li>
+        <li><a href="fasilitas.html" class="hover:text-blue-400 duration-200">Fasilitas</a></li>
+        <li><a href="loker.html" class="hover:text-blue-400 duration-200">Loker</a></li>
+        <li><a href="daftar.html" class="hover:text-blue-400 duration-200">Daftar</a></li>
+      </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section
+      style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('./images/bg3 (2).jpg');
+      background-position: center; background-size: cover;"
+      class="min-h-screen flex items-center px-6 md:px-10 py-20">
+
+      <div class="w-full md:w-1/2 space-y-6 text-left relative z-10 md:ml-10">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-white drop-shadow-lg">
+          USER
+        </h2>
+
+        <p class="text-lg font-extrabold text-white drop-shadow">
+          Home & Daftar
+        </p>
+      </div>
+    </section>
+
+    <!-- FORM -->
+    <div class="bg-blue-50 text-black px-6 md:px-10 py-16">
+      <form class="space-y-6 max-w-6xl mx-auto">
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div>
+            <label class="block text-sm font-semibold text-gray-600 mb-1">Nama Lengkap</label>
+            <input type="text"
+              class="w-full bg-blue-100 border border-blue-200 px-4 py-3 rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none"
+              placeholder="Masukkan nama lengkap..." />
+          </div>
+
+          <div>
+            <label class="block text-sm font-semibold text-gray-600 mb-1">Alamat</label>
+            <input type="text"
+              class="w-full bg-blue-100 border border-blue-200 px-4 py-3 rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none"
+              placeholder="Masukkan alamat..." />
+          </div>
+
+          <div>
+            <label class="block text-sm font-semibold text-gray-600 mb-1">Email</label>
+            <input type="email"
+              class="w-full bg-blue-100 border border-blue-200 px-4 py-3 rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none"
+              placeholder="Masukkan email..." />
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-sm font-semibold text-gray-600 mb-1">Nomor HP</label>
+          <input type="text"
+            class="w-full bg-blue-100 border border-blue-200 px-4 py-3 rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none"
+            placeholder="Masukkan nomor hp..." />
+        </div>
+
+        <div>
+          <label class="block text-sm font-semibold text-gray-600 mb-1">Pesan Kamu</label>
+          <textarea
+            class="w-full bg-blue-100 border border-blue-200 px-4 py-4 h-40 rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none"
+            placeholder="Tulis pesan kamu..."></textarea>
+        </div>
+
+        <button type="submit"
+          class="w-full bg-blue-600 text-white font-bold py-3 rounded-lg hover:bg-blue-500 transition">
+          SIMPAN
+        </button>
+      </form>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#009688] text-white py-12">
+      <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10">
+
+        <div class="space-y-6">
+          <p>📍 Kp. Setu RT.001 / RW.004, Cibarusah, Bekasi</p>
+          <p>📞 0857 1456 7005</p>
+          <p>✉️ alhanifcibarusah@gmail.com</p>
+          <p>🕒 Senin - Jumat : 07.00 - 17.00</p>
+        </div>
+
+        <div class="w-full h-96 rounded-lg overflow-hidden shadow-lg">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d71984.44405148602!2d107.10957430291876!3d-6.435940324102666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e699807ba2a4125%3A0xec9d72f44b808c1a!2sSDI%20Plus%20Al%20Hanif!5e0!3m2!1sid!2sid!4v1765953394008!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+      </div>
+    </footer>
+
+    <!-- SCRIPT HAMBURGER -->
+    <script>
+      const btn = document.getElementById('menu-btn');
+      const menu = document.getElementById('menu');
+      btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+      });
+    </script>
+
+  </body>
+</html>
